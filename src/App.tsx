@@ -1,12 +1,11 @@
 import React from 'react';
 import logo from './logo.svg';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import './App.css';
+import './styles/App.css';
 import Landing from './components/landing';
 import Header from './components/header';
 import Projects from './components/projects';
 import About from './components/about';
-
 
 function App() {
     return (

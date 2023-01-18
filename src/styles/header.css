@@ -1,0 +1,11 @@
+#header {
+    list-style: none;
+}
+
+.navLink {
+    text-decoration: none;
+}
+
+.navLink:hover {
+    text-decoration: underline;
+}

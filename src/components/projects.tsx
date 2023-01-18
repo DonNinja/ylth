@@ -1,6 +1,11 @@
+import { Title } from "./functions";
+
 const Projects = () => {
-    return(
-        <p>These will be my projects</p>
+    return (
+        <>
+            {Title("My projects")}
+            <p>These will be my projects</p>
+        </>
     );
 }
 
