@@ -1,11 +1,30 @@
 #header {
-    list-style: none;
+    background-color: grey;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.linkContainer {
+    padding: 3em 0;
 }
 
 .navLink {
+    font-size: large;
+    margin: .5em 0;
+    border: 3px black solid;
+    border-radius: 12px;
+    text-align: center;
     text-decoration: none;
+    padding: 1em 3em;
+    transition-duration: 500ms;
+    background-color: white;
+}
+
+.navLink:not(:first-child) {
+    margin-left: 2em;
 }
 
 .navLink:hover {
-    text-decoration: underline;
+    background-color: lightgrey;
 }
