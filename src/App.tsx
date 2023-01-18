@@ -5,6 +5,7 @@ import './App.css';
 import Landing from './components/landing';
 import Header from './components/header';
 import Projects from './components/projects';
+import About from './components/about';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
                 <Routes>
                     <Route path='/' element={<Landing />} />
                     <Route path='/projects' element={<Projects />} />
+                    <Route path='/about' element={<About />} />
                 </Routes>
             </Router>
         </>
