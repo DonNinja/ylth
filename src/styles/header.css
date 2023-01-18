@@ -5,24 +5,19 @@
     justify-content: center;
 }
 
-.linkContainer {
-    padding: 3em 0;
-}
-
 .navLink {
+    height: 100%;
     font-size: large;
-    margin: .5em 0;
-    border: 3px black solid;
-    border-radius: 12px;
     text-align: center;
     text-decoration: none;
-    padding: 1em 3em;
+    padding: 1em 0;
     transition-duration: 500ms;
     background-color: white;
+    min-width: 10vw;
 }
 
 .navLink:not(:first-child) {
-    margin-left: 2em;
+    border-left: 1px solid black;
 }
 
 .navLink:hover {
