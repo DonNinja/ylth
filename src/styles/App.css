@@ -1,3 +1,11 @@
 body {
     background-color: rgb(71, 71, 71);
 }
+
+.container {
+    display: flex;
+    width: 60vw;
+    padding: 1em;
+    margin: 0 auto;
+    background-color: rgb(228, 228, 228);
+}

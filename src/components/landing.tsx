@@ -2,10 +2,10 @@ import { Title } from "./functions";
 
 const Landing = () => (
     <>
-        { Title("Ylth") }
-        <div>
+        {Title("Ylth")}
+        <p>
             This is a test
-        </div>
+        </p>
     </>
 )
 
