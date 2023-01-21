@@ -1,0 +1,21 @@
+.sectionTitle {
+    text-align: center;
+}
+
+.projectsContainer {
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.projectDetails {
+    display: flex;
+}
+
+.projectDescription {
+    width: 60%;
+}
+
+.projectLogo {
+    width: 40%;
+    margin: 0 auto;
+}
