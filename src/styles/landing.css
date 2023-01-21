@@ -1,0 +1,16 @@
+.landingContainer {
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.title {
+    text-align: center;
+}
+
+.graduationPic {
+    width: 50%;
+}
+
+p {
+    text-align: justify;
+}

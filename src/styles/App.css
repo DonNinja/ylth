@@ -3,7 +3,9 @@ body {
 }
 
 .container {
+    min-height: 100vh;
     display: flex;
+    flex-wrap: wrap;
     width: 60vw;
     padding: 1em;
     margin: 0 auto;

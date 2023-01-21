@@ -11,10 +11,11 @@
     font-size: large;
     text-align: center;
     text-decoration: none;
-    padding: 1em 0;
+    padding: 1.5vh 0;
     transition-duration: 500ms;
     background-color: white;
     min-width: 10vw;
+    user-select: none;
 }
 
 .navLink:not(:first-child) {
