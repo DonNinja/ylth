@@ -12,10 +12,20 @@
 }
 
 .projectDescription {
-    width: 60%;
+    padding-left: 1em;
+}
+
+.projectText {
+    flex: 2;
+}
+
+.projectLanguages {
+    font-size: small;
 }
 
 .projectLogo {
+    flex: 1;
     width: 40%;
+    height: fit-content;
     margin: 0 auto;
 }
