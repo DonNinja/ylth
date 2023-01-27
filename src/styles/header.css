@@ -1,3 +1,7 @@
+:root {
+    --navLinkColour: black;
+}
+
 #header {
     background-color: grey;
     display: flex;
@@ -16,6 +20,7 @@
     background-color: white;
     min-width: 10vw;
     user-select: none;
+    color: var(--navLinkColour);
 }
 
 .navLink:not(:first-child) {
@@ -24,4 +29,8 @@
 
 .navLink:hover {
     background-color: lightgrey;
+}
+
+.navLink:visited {
+    color: var(--navLinkColour);
 }
