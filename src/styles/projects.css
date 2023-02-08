@@ -11,9 +11,9 @@
     display: flex;
 }
 
-/* div .projectsContainer :nth-of-type(even) {
+div .projectsContainer :nth-of-type(even) {
     flex-direction: row-reverse;
-} */
+}
 
 .projectDescription {
     padding: 0 1em;
