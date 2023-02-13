@@ -6,7 +6,7 @@ import YCP from "../images/Projects/YCP.png"
 function Project(title: string, description: string, link: string, languages: string, image?: string, imageDescription?: string) {
     return (
         <>
-            <h2> {title} </h2>
+            <h2 className="projectTitle"> {title} </h2>
             <div className="projectDetails">
                 <div className="projectText">
                     <p className="projectDescription" dangerouslySetInnerHTML={{ __html: description }}></p>
@@ -26,7 +26,7 @@ function Project(title: string, description: string, link: string, languages: st
 const Projects = () => (
     <>
         {Title("My projects")}
-        <div className="projectsContainer">
+        <div className="pageContainer">
             <h1 className="title">Projects</h1>
             {Project(
                 "Mana Rumble",

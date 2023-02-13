@@ -4,8 +4,10 @@ import { Title } from "./functions";
 const Links = () => {
     return (
         <>
-            {Title(`Links`) }
-            <h1>Links</h1>
+            {Title(`Links`)}
+            <div className="pageContainer">
+                <h1 className="title">Links</h1>
+            </div>
         </>
     );
 }
