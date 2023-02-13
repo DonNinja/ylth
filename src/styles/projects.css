@@ -1,7 +1,3 @@
-.sectionTitle {
-    text-align: center;
-}
-
 .projectsContainer {
     margin: 0 auto;
     max-width: 80%;
@@ -11,6 +7,7 @@
     display: flex;
 }
 
+/* Every other project is reversed */
 div .projectsContainer :nth-of-type(even) {
     flex-direction: row-reverse;
 }
@@ -21,7 +18,7 @@ div .projectsContainer :nth-of-type(even) {
 }
 
 .projectText {
-    width: 60%;
+    width: 70%;
 }
 
 .projectLanguages {
@@ -29,7 +26,11 @@ div .projectsContainer :nth-of-type(even) {
 }
 
 .projectLogo {
-    width: 40%;
+    width: 30%;
     height: fit-content;
     margin: 0 auto;
+}
+
+a, a:visited {
+    color: blue;
 }

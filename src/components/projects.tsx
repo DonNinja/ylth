@@ -27,7 +27,7 @@ const Projects = () => (
     <>
         {Title("My projects")}
         <div className="projectsContainer">
-            <h1 className="sectionTitle">Projects</h1>
+            <h1 className="title">Projects</h1>
             {Project(
                 "Mana Rumble",
                 `Mana Rumble was our final project during our Computer Science studies in Reykjavík University. It was developed using Unity while utilising Rewired so that two players can use separate controllers on the same machine.
