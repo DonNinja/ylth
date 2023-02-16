@@ -6,7 +6,7 @@ import YCP from "../images/Projects/YCP.png"
 function Project(title: string, description: string, link: string, languages: string, image?: string, imageDescription?: string) {
     return (
         <>
-            <h2 className="projectTitle"> {title} </h2>
+            <h2 className="projectTitle"><a href={link} rel="noreferrer" target="_blank"> {title} </a></h2>
             <div className="projectDetails">
                 <div className="projectText">
                     <p className="projectDescription" dangerouslySetInnerHTML={{ __html: description }}></p>
@@ -48,7 +48,7 @@ const Projects = () => (
                     This is a chrome extension that sets a YouTube video to stop when it reaches the next chapter as set by the video uploader.
                 </p>`,
                 "https:chrome.google.com/webstore/detail/youtube-chapter-pauser/igaciglbekobidklgklaejjkoefpcdgf",
-                "Javascript, CSS",
+                "Javascript, HTML, CSS",
                 YCP,
                 "YouTube Chapter Pauser icon"
             )}
