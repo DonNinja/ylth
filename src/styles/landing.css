@@ -1,7 +1,12 @@
 .graduationPic {
-    width: 50%;
+    width: 30%;
+    margin-left: 2em;
 }
 
 p {
     text-align: justify;
+}
+
+.content {
+    display: flex;
 }
