@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/ylth/static/css/main.5a22dd3f.css",
-    "main.js": "/ylth/static/js/main.d971f633.js",
+    "main.css": "/ylth/static/css/main.227cdd62.css",
+    "main.js": "/ylth/static/js/main.03368691.js",
     "static/js/787.2c678e87.chunk.js": "/ylth/static/js/787.2c678e87.chunk.js",
     "static/media/ManaRumble.png": "/ylth/static/media/ManaRumble.31a4b9e6e46ed6e94871.png",
     "static/media/graduationPicCropped.jpg": "/ylth/static/media/graduationPicCropped.29f85bca469e77dc259b.jpg",
     "static/media/YCP.png": "/ylth/static/media/YCP.1d55b48992515837acaa.png",
     "index.html": "/ylth/index.html",
-    "main.5a22dd3f.css.map": "/ylth/static/css/main.5a22dd3f.css.map",
-    "main.d971f633.js.map": "/ylth/static/js/main.d971f633.js.map",
+    "main.227cdd62.css.map": "/ylth/static/css/main.227cdd62.css.map",
+    "main.03368691.js.map": "/ylth/static/js/main.03368691.js.map",
     "787.2c678e87.chunk.js.map": "/ylth/static/js/787.2c678e87.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5a22dd3f.css",
-    "static/js/main.d971f633.js"
+    "static/css/main.227cdd62.css",
+    "static/js/main.03368691.js"
   ]
 }
