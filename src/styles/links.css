@@ -1,12 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+
+h3 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black !important;
+}
+
 .link {
     background-color: white;
     border-radius: 6px;
     border: 1px solid black;
-    /* width: 10rem; */
     text-align: center;
-    flex: 33%;
+    transition-duration: .5s;
+    flex: 30%;
+    padding: 1em;
+    max-width: 30%;
+}
+
+.link:nth-child(n+4) {
+    margin-top: 2em;
+}
+
+.link:not(:nth-child(3n+1)) {
+    margin-left: 2em;
+}
+
+.link:hover {
+    background-color: lightgrey;
 }
 
 .linksContainer {
     display: flex;
+    flex-wrap: wrap;
+}
+
+.icon {
+    width: 2rem;
 }
