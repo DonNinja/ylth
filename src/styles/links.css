@@ -1,0 +1,12 @@
+.link {
+    background-color: white;
+    border-radius: 6px;
+    border: 1px solid black;
+    /* width: 10rem; */
+    text-align: center;
+    flex: 33%;
+}
+
+.linksContainer {
+    display: flex;
+}
