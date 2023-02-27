@@ -25,6 +25,10 @@
     width: 70%;
 }
 
+.projectTextFull {
+    width: 100%;
+}
+
 .projectLanguages {
     font-size: small;
 }
@@ -44,4 +48,8 @@ a:visited {
 .projectTitle {
     /* margin-top: 0; */
     text-decoration: underline;
+}
+
+.strikethrough {
+    text-decoration: line-through;
 }

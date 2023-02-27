@@ -6,10 +6,7 @@ import YCP from "../images/Projects/YCP.png"
 let i = 0;
 
 
-function Project(title: string, description: string, link: string, languages: string, image?: string, imageDescription?: string) {
-    const projectStyle = {
-        flexDirection: "row-reverse"
-    }
+function Project(title: string, description: string, link: string, githubLink: string, languages: string, image?: string, imageDescription?: string) {
     i++;
     return (
         <>
@@ -21,9 +18,16 @@ function Project(title: string, description: string, link: string, languages: st
                         { flexDirection: "row-reverse" } :
                         {}
                 }>
-                    <div className="projectText">
+                    <div className={image !== "" ? "projectText" : "projectTextFull"}>
                         <p className="projectDescription" dangerouslySetInnerHTML={{ __html: description }}></p>
-                        <p className="projectLink"><a href={link} rel="noreferrer" target="_blank">See the project</a></p>
+                        <p className="projectLink"><a href={link} rel="noreferrer" target="_blank">See the project</a> |&nbsp;
+                            {
+                                githubLink !== "" ?
+                                    <a href={githubLink} target="_blank" rel="noreferrer">See the GitHub repo</a>
+                                    :
+                                    <b>Repo is private</b>
+                            }
+                        </p>
                         <p className="projectLanguages"><i>Languages and/or tools used</i>: <b>{languages}</b></p>
                     </div>
                     {
@@ -51,6 +55,7 @@ const Projects = () => (
                     Mana Rumble is a team based PVP fantasy sports game, utilising a simplified version of handball while allowing the player to control any of 3 characters, each with an ability based on fantasy classes found in fantasy roleplaying games.
                 </p>`,
                 "https://ylth.itch.io/mana-rumble",
+                "",
                 "Unity, C#",
                 ManaRumble,
                 "Mana Rumble logo"
@@ -63,9 +68,19 @@ const Projects = () => (
                     This is a chrome extension that sets a YouTube video to stop when it reaches the next chapter as set by the video uploader.
                 </p>`,
                 "https://chrome.google.com/webstore/detail/youtube-chapter-pauser/igaciglbekobidklgklaejjkoefpcdgf",
+                "https://github.com/DonNinja/YouTube-Chapter-Pauser",
                 "Javascript, HTML, CSS",
                 YCP,
                 "YouTube Chapter Pauser icon"
+            )}
+            {Project(
+                "Ylth",
+                `This is this website`,
+                "https://donninja.github.io/ylth/",
+                "https://github.com/DonNinja/ylth",
+                "React.js, Typescript, HTML, CSS",
+                "",
+                "None"
             )}
         </div>
     </>
