@@ -9,36 +9,35 @@ let i = 0;
 function Project(title: string, description: string, link: string, githubLink: string, languages: string, image?: string, imageDescription?: string) {
     i++;
     return (
-        <>
-            <section className="project">
-                <h2 className="projectTitle"><a href={link} rel="noreferrer" target="_blank"> {title} </a></h2>
-                <div className="projectDetails" style={
-                    // reverse row direction for every other project
-                    i % 2 === 0 ?
-                        { flexDirection: "row-reverse" } :
-                        {}
-                }>
-                    <div className={image !== "" ? "projectText" : "projectTextFull"}>
-                        <p className="projectDescription" dangerouslySetInnerHTML={{ __html: description }}></p>
-                        <p className="projectLink"><a href={link} rel="noreferrer" target="_blank">See the project</a> |&nbsp;
-                            {
-                                githubLink !== "" ?
-                                    <a href={githubLink} target="_blank" rel="noreferrer">See the GitHub repo</a>
-                                    :
-                                    <b>Repo is private</b>
-                            }
-                        </p>
-                        <p className="projectLanguages"><i>Languages and/or tools used</i>: <b>{languages}</b></p>
-                    </div>
-                    {
-                        // If image exists, show it
-                        image !== "" ?
-                            <img src={image} alt={imageDescription} className="projectLogo" /> :
-                            <></>
-                    }
+        <section className="project">
+            <h2 className="projectTitle"><a href={link} rel="noreferrer" target="_blank"> {title} </a></h2>
+            <div className="projectDetails" style={
+                // reverse row direction for every other project
+                i % 2 === 0 ?
+                    { flexDirection: "row-reverse" } :
+                    {}
+            }>
+                {// Check if image is given otherwise set project text to full width}
+                <div className={image ? "projectText" : "projectTextFull"}>
+                    <p className="projectDescription" dangerouslySetInnerHTML={{ __html: description }}></p>
+                    <p className="projectLink"><a href={link} rel="noreferrer" target="_blank">See the project</a> |&nbsp;
+                        {
+                            githubLink !== "" ?
+                                <a href={githubLink} target="_blank" rel="noreferrer">See the GitHub repo</a>
+                                :
+                                <b>Repo is private</b>
+                        }
+                    </p>
+                    <p className="projectLanguages"><i>Languages and/or tools used</i>: <b>{languages}</b></p>
                 </div>
-            </section>
-        </>
+                {
+                    // If image is given, show ito else don't
+                    image ?
+                        <img src={image} alt={imageDescription} className="projectLogo" /> :
+                        <></>
+                }
+            </div>
+        </section>
     );
 }
 
@@ -75,12 +74,10 @@ const Projects = () => (
             )}
             {Project(
                 "Ylth",
-                `This is this website`,
+                `This is this website, I felt like it would be easier for me to create a website which I could periodically update instead of updating my CV periodically. We'll just have to see if this was a fruitless effort or if it will ultimately be more useful than not.`,
                 "https://donninja.github.io/ylth/",
                 "https://github.com/DonNinja/ylth",
-                "React.js, Typescript, HTML, CSS",
-                "",
-                "None"
+                "React.js, Typescript, HTML, CSS"
             )}
         </div>
     </>
