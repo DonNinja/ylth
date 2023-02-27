@@ -3,7 +3,7 @@
 }
 
 #header {
-    background-color: grey;
+    background-color: cornflowerblue;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
@@ -28,7 +28,7 @@
 }
 
 .navLink:hover {
-    background-color: lightgrey;
+    background-color: cyan;
 }
 
 .navLink:visited {

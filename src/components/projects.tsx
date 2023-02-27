@@ -3,22 +3,37 @@ import '../styles/projects.css';
 import ManaRumble from "../images/Projects/ManaRumble.png"
 import YCP from "../images/Projects/YCP.png"
 
+let i = 0;
+
+
 function Project(title: string, description: string, link: string, languages: string, image?: string, imageDescription?: string) {
+    const projectStyle = {
+        flexDirection: "row-reverse"
+    }
+    i++;
     return (
         <>
-            <h2 className="projectTitle"><a href={link} rel="noreferrer" target="_blank"> {title} </a></h2>
-            <div className="projectDetails">
-                <div className="projectText">
-                    <p className="projectDescription" dangerouslySetInnerHTML={{ __html: description }}></p>
-                    <p className="projectLink"><a href={link} rel="noreferrer" target="_blank">See the project</a></p>
-                    <p className="projectLanguages"><i>Languages and/or tools used</i>: <b>{languages}</b></p>
+            <section className="project">
+                <h2 className="projectTitle"><a href={link} rel="noreferrer" target="_blank"> {title} </a></h2>
+                <div className="projectDetails" style={
+                    // reverse row direction for every other project
+                    i % 2 === 0 ?
+                        { flexDirection: "row-reverse" } :
+                        {}
+                }>
+                    <div className="projectText">
+                        <p className="projectDescription" dangerouslySetInnerHTML={{ __html: description }}></p>
+                        <p className="projectLink"><a href={link} rel="noreferrer" target="_blank">See the project</a></p>
+                        <p className="projectLanguages"><i>Languages and/or tools used</i>: <b>{languages}</b></p>
+                    </div>
+                    {
+                        // If image exists, show it
+                        image !== "" ?
+                            <img src={image} alt={imageDescription} className="projectLogo" /> :
+                            <></>
+                    }
                 </div>
-                {
-                    // This works as an if statement since 'true && expression' evaluates to expression which is useful
-                    image !== "" &&
-                    <img src={image} alt={imageDescription} className="projectLogo" />
-                }
-            </div>
+            </section>
         </>
     );
 }
@@ -35,7 +50,7 @@ const Projects = () => (
                 <p>
                     Mana Rumble is a team based PVP fantasy sports game, utilising a simplified version of handball while allowing the player to control any of 3 characters, each with an ability based on fantasy classes found in fantasy roleplaying games.
                 </p>`,
-                "https:yngvi19.itch.io/mana-rumble",
+                "https://ylth.itch.io/mana-rumble",
                 "Unity, C#",
                 ManaRumble,
                 "Mana Rumble logo"
@@ -47,7 +62,7 @@ const Projects = () => (
                 <p>
                     This is a chrome extension that sets a YouTube video to stop when it reaches the next chapter as set by the video uploader.
                 </p>`,
-                "https:chrome.google.com/webstore/detail/youtube-chapter-pauser/igaciglbekobidklgklaejjkoefpcdgf",
+                "https://chrome.google.com/webstore/detail/youtube-chapter-pauser/igaciglbekobidklgklaejjkoefpcdgf",
                 "Javascript, HTML, CSS",
                 YCP,
                 "YouTube Chapter Pauser icon"

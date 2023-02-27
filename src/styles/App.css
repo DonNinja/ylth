@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(71, 71, 71);
+    background-color: cornflowerblue;
 }
 
 .container {
@@ -9,7 +9,7 @@ body {
     width: 60vw;
     padding: 1em;
     margin: 0 auto;
-    background-color: rgb(228, 228, 228);
+    background-color: rgb(154, 161, 255);
 }
 
 .title {
