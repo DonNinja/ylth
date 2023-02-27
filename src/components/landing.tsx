@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Title } from "./functions";
-import graduationPic from "../images/graduationPicCropped.jpg";
+import graduationPic from "../images/Me/graduationPicCropped.jpg";
 
 import "../styles/landing.css";
 
