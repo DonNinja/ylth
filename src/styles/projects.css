@@ -22,11 +22,7 @@
 }
 
 .projectText {
-    width: 70%;
-}
-
-.projectTextFull {
-    width: 100%;
+    flex: 70%;
 }
 
 .projectLanguages {
@@ -34,7 +30,8 @@
 }
 
 .projectLogo {
-    width: 30%;
+    flex: 30%;
+    max-width: 30%;
     height: fit-content;
     margin: 0 auto;
 }

@@ -17,21 +17,20 @@ function Project(title: string, description: string, link: string, githubLink: s
                     { flexDirection: "row-reverse" } :
                     {}
             }>
-                {// Check if image is given otherwise set project text to full width}
-                <div className={image ? "projectText" : "projectTextFull"}>
-                    <p className="projectDescription" dangerouslySetInnerHTML={{ __html: description }}></p>
-                    <p className="projectLink"><a href={link} rel="noreferrer" target="_blank">See the project</a> |&nbsp;
-                        {
-                            githubLink !== "" ?
-                                <a href={githubLink} target="_blank" rel="noreferrer">See the GitHub repo</a>
-                                :
-                                <b>Repo is private</b>
-                        }
-                    </p>
-                    <p className="projectLanguages"><i>Languages and/or tools used</i>: <b>{languages}</b></p>
-                </div>
+                    <div className="projectText">
+                        <p className="projectDescription" dangerouslySetInnerHTML={{ __html: description }}></p>
+                        <p className="projectLink"><a href={link} rel="noreferrer" target="_blank">See the project</a> |&nbsp;
+                            {
+                                githubLink !== "" ?
+                                    <a href={githubLink} target="_blank" rel="noreferrer">See the GitHub repo</a>
+                                    :
+                                    <b>Repo is private</b>
+                            }
+                        </p>
+                        <p className="projectLanguages"><i>Languages and/or tools used</i>: <b>{languages}</b></p>
+                    </div>
                 {
-                    // If image is given, show ito else don't
+                    // If image is given, show it else don't
                     image ?
                         <img src={image} alt={imageDescription} className="projectLogo" /> :
                         <></>
