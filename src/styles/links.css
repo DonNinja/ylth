@@ -18,11 +18,11 @@ a {
     border: 1px solid black;
     text-align: center;
     transition-duration: .5s;
-    flex: 30%;
+    flex: 25%;
     padding: 1em;
-    max-width: 30%;
 }
 
+/* All but the first row will have a margin on its top */
 .link:nth-child(n+4) {
     margin-top: 2em;
 }
