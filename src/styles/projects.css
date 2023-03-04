@@ -4,7 +4,7 @@
 }
 
 .project {
-    background-color: #c7c7c7;
+    background-color: rgb(75, 79, 104);
     padding: .5rem 1rem;
     margin-bottom: .5rem;
     border-radius: 5px;
@@ -34,12 +34,6 @@
     max-width: 30%;
     height: fit-content;
     margin: 0 auto;
-}
-
-a,
-a:visited {
-    color: blue;
-    font-weight: bold;
 }
 
 .projectTitle {

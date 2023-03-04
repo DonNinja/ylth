@@ -1,5 +1,23 @@
+:root {
+    --linkColour: rgb(76, 79, 92);
+    --linkHoverColour: rgb(51, 53, 63);
+    --navLinkColour: whitesmoke;
+    --backgroundColour: rgb(40, 42, 54);
+    --containerColour: rgb(68, 71, 90);
+}
+
+* {
+    color: whitesmoke;
+}
+
 body {
-    background-color: cornflowerblue;
+    background-color: var(--backgroundColour);
+}
+
+a,
+a:visited {
+    color: lightblue;
+    font-weight: bold;
 }
 
 .container {
@@ -9,7 +27,7 @@ body {
     width: 60vw;
     padding: 1em;
     margin: 0 auto;
-    background-color: rgb(154, 161, 255);
+    background-color: var(--containerColour);
 }
 
 .title {

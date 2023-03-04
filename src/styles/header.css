@@ -1,9 +1,5 @@
-:root {
-    --navLinkColour: black;
-}
-
 #header {
-    background-color: cornflowerblue;
+    background-color: var(--backgroundColour);
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
@@ -18,7 +14,7 @@
     text-decoration: none;
     padding: 1.5vh 0;
     transition-duration: 500ms;
-    background-color: white;
+    background-color: var(--linkColour);
     min-width: 10vw;
     user-select: none;
     color: var(--navLinkColour);
@@ -29,7 +25,7 @@
 }
 
 .navLink:hover {
-    background-color: cyan;
+    background-color: var(--linkHoverColour);
 }
 
 .navLink:visited {
