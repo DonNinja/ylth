@@ -13,10 +13,10 @@ function App() {
                 <Header />
                 <div className='container'>
                     <Routes>
-                        <Route path='/ylth/' element={<Landing />} />
-                        <Route path='/ylth/projects' element={<Projects />} />
-                        <Route path='/ylth/about' element={<About />} />
-                        <Route path='/ylth/links' element={<Links />} />
+                        <Route path='/' element={<Landing />} />
+                        <Route path='/projects' element={<Projects />} />
+                        <Route path='/about' element={<About />} />
+                        <Route path='/links' element={<Links />} />
                     </Routes>
                 </div>
             </Router>
