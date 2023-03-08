@@ -6,6 +6,7 @@ import Projects from './components/projects';
 import About from './components/about';
 import Links from './components/links';
 import { home, about, projects, links } from "./data/routes";
+import Footer from "./components/footer";
 
 function App() {
     return (
@@ -21,6 +22,7 @@ function App() {
                     </Routes>
                 </div>
             </Router>
+            <Footer />
         </>
     );
 }

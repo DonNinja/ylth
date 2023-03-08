@@ -13,7 +13,7 @@ function Project(title: string, description: string, link: string, githubLink: s
             <h2 className="projectTitle"><a href={link} rel="noreferrer" target="_blank"> {title} </a></h2>
             <div className="projectDetails" style={
                 // reverse row direction for every other project
-                i % 2 === 0 ?
+                i % 2 === 1 ?
                     { flexDirection: "row-reverse" } :
                     {}
             }>

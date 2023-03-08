@@ -1,3 +1,32 @@
-.content {
-    
+.aboutContent {
+    display: block;
+}
+
+.studyObject:nth-child(n+2) {
+    padding-top: 2em;
+}
+
+.studyTitle {
+    text-align: center;
+    font-size: larger;
+}
+
+.aboutSchool {
+    display: flex;
+    padding-top: 1rem;
+}
+
+.schoolStory {
+    text-align: justify;
+}
+
+.schoolDiploma {
+    margin-left: 2em;
+    width: 30%;
+}
+
+.studyGrade {
+    text-align: right;
+    color: lightgrey;
+    font-size: 14px;
 }
