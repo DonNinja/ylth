@@ -1,0 +1,16 @@
+#footer {
+    border-top: solid 1px black;
+    height: 3rem;
+    width: 100%;
+    display: flex;
+}
+
+.footerContent {
+    padding: 0 1em;
+    flex-grow: 1;
+    margin: auto;
+}
+
+.rightFooter {
+    text-align: right;
+}
