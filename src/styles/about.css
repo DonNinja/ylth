@@ -1,7 +1,20 @@
-.content {
-    text-align: justify;
+.aboutContent {
+    display: block;
 }
 
 .studyTitle {
     text-align: center;
+}
+
+.aboutSchool {
+    display: flex;
+}
+
+.schoolStory {
+    text-align: justify;
+}
+
+.schoolDiploma {
+    margin-left: 2em;
+    width: 30%;
 }
