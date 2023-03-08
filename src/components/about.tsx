@@ -1,6 +1,7 @@
 import { Title } from "./functions"
 import "../styles/about.css"
-// import 
+import HR_Diploma from "../images/Diplomas/HR_Diploma.jpg";
+import TSchool_Diploma from "../images/Diplomas/TSchool_Diploma.jpg";
 
 function study(title: string, description: string, image: string, imageDescription: string) {
     return (
