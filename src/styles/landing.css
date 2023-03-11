@@ -3,10 +3,11 @@
     margin-left: 2em;
 }
 
-p {
-    text-align: justify;
+.disclaimer {
+    color: rgba(255, 0, 0, 0.75);
 }
 
 .landingContent {
+    text-align: justify;
     display: flex;
 }
