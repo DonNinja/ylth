@@ -9,7 +9,7 @@ h3 {
 
 a.link {
     text-decoration: none;
-    color: black !important;
+    color: inherit;
 }
 
 .link {
