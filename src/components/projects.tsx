@@ -12,7 +12,7 @@ function Project(title: string, description: string, link: string, githubLink: s
         <section className="project">
             <h2 className="projectTitle"><a href={link} rel="noreferrer" target="_blank"> {title} </a></h2>
             <div className="projectDetails" style={
-                // reverse row direction for every other project
+                // Reverse row direction for every other project
                 i % 2 === 1 ?
                     { flexDirection: "row-reverse" } :
                     {}
@@ -21,6 +21,7 @@ function Project(title: string, description: string, link: string, githubLink: s
                     <p className="projectDescription" dangerouslySetInnerHTML={{ __html: description }}></p>
                     <p className="projectLink"><a href={link} rel="noreferrer" target="_blank">See the project</a> |&nbsp;
                         {
+                            // If no GitHub link given, assume repo is private
                             githubLink !== "" ?
                                 <a href={githubLink} target="_blank" rel="noreferrer">See the GitHub repo</a>
                                 :

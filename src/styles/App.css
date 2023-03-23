@@ -21,11 +21,11 @@ a:visited {
 }
 
 .container {
-    min-height: 100vh;
+    min-height: 89vh;
     display: flex;
     flex-wrap: wrap;
     width: 60vw;
-    padding: 1em;
+    padding: 0 1em;
     margin: 0 auto;
     background-color: var(--containerColour);
 }
