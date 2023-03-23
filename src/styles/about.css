@@ -3,7 +3,7 @@
 }
 
 .studyObject:nth-child(n+2) {
-    padding-top: 2em;
+    padding-top: .5rem;
 }
 
 .studyTitle {
