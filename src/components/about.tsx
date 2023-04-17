@@ -27,6 +27,13 @@ const About = () => {
                 <h2><center>Studies</center></h2>
                 <div className="aboutContent">
                     {Study(
+                        "Reykjavík University",
+                        `I started studying in Reykjavík University in August of 2019, and quickly found that I may have had a bit more preparation than some of my peers, at least regarding formal education. I quickly discovered however that the studies would move fast and others would be caught up in no time. `,
+                        HR_Diploma,
+                        "My diploma from Reykjavík University",
+                        7.98
+                    )}
+                    {Study(
                         "Tækniskólinn",
                         `I started my programming studies at Tækniskólinn, starting at their Computer Science classes in the spring of 2016. I decided quite early on in my life that I wanted to learn how to program and how programs, and computers in general, work to help us to solve the problems we face.
                         <br />
@@ -34,13 +41,6 @@ const About = () => {
                         TSchool_Diploma,
                         "My diploma from Tækniskólinn",
                         8.11
-                    )}
-                    {Study(
-                        "Reykjavík University",
-                        `I started studying in Reykjavík University in August of 2019, and quickly found that I may have had a bit more preparation than some of my peers, at least regarding formal education. I quickly discovered however that the studies would move fast and others would be caught up in no time. `,
-                        HR_Diploma,
-                        "My diploma from Reykjavík University",
-                        7.98
                     )}
                 </div>
             </div>
