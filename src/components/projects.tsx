@@ -47,17 +47,11 @@ const Projects = () => (
         <div className="pageContainer">
             <h1 className="title">Projects</h1>
             {Project(
-                "Mana Rumble",
-                `Mana Rumble was our final project during our Computer Science studies in Reykjavík University. It was developed using Unity while utilising Rewired so that two players can use separate controllers on the same machine.
-                
-                <p>
-                    Mana Rumble is a team based PVP fantasy sports game, utilising a simplified version of handball while allowing the player to control any of 3 characters, each with an ability based on fantasy classes found in fantasy roleplaying games.
-                </p>`,
-                "https://ylth.itch.io/mana-rumble",
-                "",
-                "Unity, C#",
-                ManaRumble,
-                "Mana Rumble logo"
+                "Ylth",
+                `This is this website, I felt like it would be easier for me to create a website which I could periodically update instead of updating my CV periodically. We'll just have to see if this was a fruitless effort or if it will ultimately be more useful than not.`,
+                "https://donninja.github.io/ylth/",
+                "https://github.com/DonNinja/ylth",
+                "React.js, Typescript, HTML, CSS"
             )}
             {Project(
                 "YouTube Chapter Pauser",
@@ -73,11 +67,17 @@ const Projects = () => (
                 "YouTube Chapter Pauser icon"
             )}
             {Project(
-                "Ylth",
-                `This is this website, I felt like it would be easier for me to create a website which I could periodically update instead of updating my CV periodically. We'll just have to see if this was a fruitless effort or if it will ultimately be more useful than not.`,
-                "https://donninja.github.io/ylth/",
-                "https://github.com/DonNinja/ylth",
-                "React.js, Typescript, HTML, CSS"
+                "Mana Rumble",
+                `Mana Rumble was our final project during our Computer Science studies in Reykjavík University. It was developed using Unity while utilising Rewired so that two players can use separate controllers on the same machine.
+                
+                <p>
+                    Mana Rumble is a team based PVP fantasy sports game, utilising a simplified version of handball while allowing the player to control any of 3 characters, each with an ability based on fantasy classes found in fantasy roleplaying games.
+                </p>`,
+                "https://ylth.itch.io/mana-rumble",
+                "",
+                "Unity, C#",
+                ManaRumble,
+                "Mana Rumble logo"
             )}
         </div>
     </>
