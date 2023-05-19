@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import "../styles/header.css"
-import { home, about, projects, links, work } from "../data/routes";
+import { home, about, projects } from "../data/routes";
+// , links, work
 
 const Header = () => {
     return (
