@@ -37,7 +37,7 @@ const About = () => {
                         "Tækniskólinn",
                         `I started my programming studies at Tækniskólinn, starting at their Computer Science classes in the spring of 2016. I decided quite early on in my life that I wanted to learn how to program and how programs, and computers in general, work to help us to solve the problems we face.
                         <br />
-                        During my studies I was a dilligent student and always turned in my projects on time and almost always with satisfying results (Can't win 'em all, sadly). I also did not fail any `,
+                        During my studies I was a dilligent student and always turned in my projects on time and almost always with satisfying results (Can't win 'em all, sadly).`,
                         TSchool_Diploma,
                         "My diploma from Tækniskólinn",
                         8.11
