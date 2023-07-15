@@ -4,11 +4,9 @@ import Landing from './components/landing';
 import Header from './components/header';
 import Projects from './components/projects';
 import About from './components/about';
-// import Links from './components/links';
-import { home, about, projects } from "./data/routes";
-// , links, work
+import Mines from './components/mines';
+import { home, about, projects, mines } from "./data/routes";
 import Footer from "./components/footer";
-// import Work from "./components/work";
 
 function App() {
     return (
@@ -20,8 +18,7 @@ function App() {
                         <Route path={home} element={<Landing />} />
                         <Route path={projects} element={<Projects />} />
                         <Route path={about} element={<About />} />
-                        {/* <Route path={links} element={<Links />} />
-                        <Route path={work} element={<Work />} /> */}
+                        <Route path={mines} element={<Mines />} />
                     </Routes>
                 </div>
             </Router>

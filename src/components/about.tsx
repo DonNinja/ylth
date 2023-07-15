@@ -3,17 +3,18 @@ import "../styles/about.css"
 import HR_Diploma from "../images/Diplomas/HR_Diploma.jpg";
 import TSchool_Diploma from "../images/Diplomas/TSchool_Diploma.jpg";
 
-function Study(title: string, description: string, image: string, imageDescription: string, average: number) {
+function Study(title: string, description: string, image: string, imageDescription: string, average: number, link?: string) {
     return (
         <div className="studyObject">
-            <h3 className="studyTitle"><a href="https://en.tskoli.is/" target="_blank" rel="noreferrer">{title}</a></h3>
+            <h3 className="studyTitle">
+                <a href={link} target="_blank" rel="noreferrer">{title}</a>
+            </h3>
             <div className="aboutSchool">
                 <div dangerouslySetInnerHTML={{ __html: description }} className="schoolStory" />
                 <img src={image} alt={imageDescription} className="schoolDiploma" />
 
             </div>
             <p className="studyGrade">Average grade: {average}/10</p>
-
         </div>
     );
 }
@@ -31,7 +32,8 @@ const About = () => {
                         `I started studying in Reykjavík University in August of 2019, and quickly found that I may have had a bit more preparation than some of my peers, at least regarding formal education. I quickly discovered however that the studies would move fast and others would be caught up in no time. `,
                         HR_Diploma,
                         "My diploma from Reykjavík University",
-                        7.98
+                        7.98,
+                        "https://en.ru.is"
                     )}
                     {Study(
                         "Tækniskólinn",
@@ -40,7 +42,8 @@ const About = () => {
                         During my studies I was a dilligent student and always turned in my projects on time and almost always with satisfying results (Can't win 'em all, sadly).`,
                         TSchool_Diploma,
                         "My diploma from Tækniskólinn",
-                        8.11
+                        8.11,
+                        "https://en.tskoli.is"
                     )}
                 </div>
             </div>
