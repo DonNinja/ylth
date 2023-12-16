@@ -5,8 +5,10 @@ import Header from './components/header';
 import Projects from './components/projects';
 import About from './components/about';
 import Mines from './components/mines';
-import { home, about, projects, mines } from "./data/routes";
+import { home, about, projects, mines, games, individualgame } from "./data/routes";
 import Footer from "./components/footer";
+import Games from "./components/games";
+import Game from "./components/game";
 
 function App() {
     return (
@@ -19,6 +21,8 @@ function App() {
                         <Route path={projects} element={<Projects />} />
                         <Route path={about} element={<About />} />
                         <Route path={mines} element={<Mines />} />
+                        <Route path={games} element={<Games />} />
+                        <Route path={individualgame} element={<Game />}/>
                     </Routes>
                 </div>
             </Router>
