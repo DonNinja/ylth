@@ -1,3 +1,17 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow:
+
+# Block OpenAI
+User-agent: GPTBot
+Disallow: /
+User-agent: ChatGPT-User
+Disallow: /
+
+# Block Google
+User-agent: Google-Extended 
+Disallow: /
+
+# Block Common Crawl
+User-agent: CCBot
+Disallow: /
