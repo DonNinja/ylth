@@ -21,7 +21,7 @@ a:visited {
 }
 
 .container {
-    min-height: 89vh;
+    min-height: 83vh;
     display: flex;
     flex-wrap: wrap;
     width: 60vw;

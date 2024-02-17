@@ -3,17 +3,16 @@ import '../styles/projects.css';
 import ManaRumble from "../images/Projects/ManaRumble.png"
 import YCP from "../images/Projects/YCP.png"
 
-let i = 0;
-
+let i = 1;
 
 function Project(title: string, description: string, link: string, githubLink: string, languages: string, image?: string, imageDescription?: string) {
-    i++;
+    // i++;
     return (
         <section className="project">
             <h2 className="projectTitle"><a href={link} rel="noreferrer" target="_blank"> {title} </a></h2>
             <div className="projectDetails" style={
                 // Reverse row direction for every other project
-                i % 2 === 1 ?
+                i++ % 2 === 1 ?
                     { flexDirection: "row-reverse" } :
                     {}
             }>
@@ -28,7 +27,7 @@ function Project(title: string, description: string, link: string, githubLink: s
                                 <b>Repo is private</b>
                         }
                     </p>
-                    <p className="projectLanguages"><i>Languages and/or tools used</i>: <b>{languages}</b></p>
+                    <p className="projectLanguages"><i>Major languages and/or tools used</i>: <b>{languages}</b></p>
                 </div>
                 {
                     // If image is given, show it else don't
@@ -49,7 +48,7 @@ const Projects = () => (
             {Project(
                 "Ylth",
                 `This is this website, I felt like it would be easier for me to create a website which I could periodically update instead of updating my CV periodically. We'll just have to see if this was a fruitless effort or if it will ultimately be more useful than not.`,
-                "https://donninja.github.io/ylth/",
+                "https://ylth.is/",
                 "https://github.com/DonNinja/ylth",
                 "React.js, Typescript, HTML, CSS"
             )}

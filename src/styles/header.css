@@ -13,7 +13,7 @@
     font-size: large;
     text-align: center;
     text-decoration: none;
-    padding: 1.5vh 0;
+    /* padding: 1.5vh 0; */
     transition-duration: 500ms;
     /* background-color: var(--linkColour); */
     min-width: 8vw;
@@ -22,7 +22,7 @@
 }
 
 .Logo {
-    padding: 1em;
+    padding: 1vh;
     min-width: 5vw;
     text-align: center;
 }
