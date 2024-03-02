@@ -22,7 +22,7 @@
 }
 
 .projectText {
-    flex: 70%;
+    flex: 2;
 }
 
 .projectLanguages {
@@ -30,8 +30,8 @@
 }
 
 .projectLogo {
-    flex: 30%;
-    max-width: 30%;
+    flex: 1;
+    max-width: 33%;
     height: fit-content;
     margin: 0 auto;
 }
@@ -43,4 +43,15 @@
 
 .strikethrough {
     text-decoration: line-through;
+}
+
+@media screen and (max-width: 1306px) {
+    .projectDetails {
+        flex-direction: column-reverse!important;
+    }
+
+    .projectLogo {
+        min-width: 30%;
+        margin-bottom: 1rem;
+    }
 }

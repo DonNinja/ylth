@@ -39,3 +39,9 @@ a:visited {
     margin: 0 auto;
     max-width: 80%;
 }
+
+@media screen and (max-width: 1306px) {
+    .container {
+        width: 80vw;
+    }
+}

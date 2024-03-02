@@ -44,3 +44,18 @@ a.link {
 .icon {
     width: 2rem;
 }
+
+@media screen and (max-width: 1306px) {
+    .link:not(:nth-child(3n+1)) {
+        margin-left: 0;
+    }
+
+    .link:nth-child(n+1) {
+        margin-top: 1em;
+    }
+    
+    .link {
+        flex-direction: column;
+        flex: 100%;
+    }
+}
