@@ -4,6 +4,7 @@
     --navLinkColour: whitesmoke;
     --backgroundColour: rgb(40, 42, 54);
     --containerColour: rgb(68, 71, 90);
+    --aColour: rgb(152, 209, 228);
 }
 
 body {
@@ -16,7 +17,7 @@ body {
 
 a,
 a:visited {
-    color: lightblue;
+    color: var(--aColour);
     font-weight: bold;
 }
 

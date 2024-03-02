@@ -38,16 +38,32 @@ const About = () => {
         <h1 className="title">About me</h1>
         <div className="aboutContent">
           <div>
-            As I said on the main page, I am Yngvi Leó Þráinsson, and I'm a
-            programmer. I have been interested in programming since I started
-            playing video games, as that was my introduction to using computers.
-            I've always been interested with knowing how the programs I have
-            been using work behind the scenes to allow us to make life easier
-            when doing tasks that don't require too much thought. I also receive
-            a lot of happiness when I think of the people that I have helped
-            with either configuring their workspaces, or by developing programs,
-            or extensions, to increase their enjoyment when working with
-            computers.
+            <p>
+              As I said on the main page, my name is Yngvi Leó Þráinsson, and
+              I'm a programmer. I have been interested in programming since I
+              started playing video games when I was in kindergarten, as that
+              was my introduction to using computers. I've always been
+              interested in knowing how the programs I have been using work
+              behind the scenes to allow us to make life easier when doing tasks
+              that don't require too much thought. I also experience a lot of
+              happiness when I think of the people that I have helped with
+              either configuring their workspaces, or by developing programs or
+              extensions, increase their enjoyment when working with computers.
+            </p>
+            <p>
+              I have worked on a variety of different projects, though most done
+              during my tenures at university and high school. A lot of my
+              projects can be found on my{" "}
+              <a
+                href="https://github.com/DonNinja"
+                target="_blank"
+                rel="noreferrer"
+              >
+                GitHub
+              </a>
+              , although quite a few have either never left my computer or need
+              to be private for security reasons.
+            </p>
           </div>
 
           <h2>
