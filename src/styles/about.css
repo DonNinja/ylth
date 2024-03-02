@@ -14,19 +14,36 @@
 .aboutSchool {
     display: flex;
     padding-top: 1rem;
+    flex-flow: row;
 }
 
 .schoolStory {
     text-align: justify;
+    flex: 2;
 }
 
 .schoolDiploma {
     margin-left: 2em;
-    width: 30%;
+    width: 100%;
+    flex: 1;
 }
 
 .studyGrade {
     text-align: right;
     color: lightgrey;
     font-size: 14px;
+}
+
+@media screen and (max-width: 1306px) {
+    .aboutSchool {
+        flex-flow: column;
+    }
+
+    .schoolStory {
+        padding-bottom: 1rem;
+    }
+
+    .schoolDiploma {
+        margin-left: 0;
+    }
 }
