@@ -31,9 +31,9 @@
 
 .projectLogo {
     flex: 1;
-    max-width: 33%;
+    max-width: 30%;
     height: fit-content;
-    margin: 0 auto;
+    margin: 0 1em;
 }
 
 .projectTitle {
