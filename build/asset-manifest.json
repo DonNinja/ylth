@@ -1,18 +1,21 @@
 {
   "files": {
-    "main.css": "/ylth/static/css/main.838de014.css",
-    "main.js": "/ylth/static/js/main.d9070113.js",
-    "static/js/787.2c678e87.chunk.js": "/ylth/static/js/787.2c678e87.chunk.js",
-    "static/media/ManaRumble.png": "/ylth/static/media/ManaRumble.31a4b9e6e46ed6e94871.png",
-    "static/media/graduationPicCropped.jpg": "/ylth/static/media/graduationPicCropped.29f85bca469e77dc259b.jpg",
-    "static/media/YCP.png": "/ylth/static/media/YCP.1d55b48992515837acaa.png",
-    "index.html": "/ylth/index.html",
-    "main.838de014.css.map": "/ylth/static/css/main.838de014.css.map",
-    "main.d9070113.js.map": "/ylth/static/js/main.d9070113.js.map",
-    "787.2c678e87.chunk.js.map": "/ylth/static/js/787.2c678e87.chunk.js.map"
+    "main.css": "/static/css/main.a3d919f5.css",
+    "main.js": "/static/js/main.19b04303.js",
+    "static/js/453.e3cb1977.chunk.js": "/static/js/453.e3cb1977.chunk.js",
+    "static/media/HR_Diploma.jpg": "/static/media/HR_Diploma.35f1563ac802e8944c3d.jpg",
+    "static/media/TSchool_Diploma.jpg": "/static/media/TSchool_Diploma.99409a9ee75577242aa4.jpg",
+    "static/media/ManaRumble.png": "/static/media/ManaRumble.31a4b9e6e46ed6e94871.png",
+    "static/media/graduationPicCropped.jpg": "/static/media/graduationPicCropped.29f85bca469e77dc259b.jpg",
+    "static/media/BrowserSounds.png": "/static/media/BrowserSounds.a4d3bbf03251aa3b3f48.png",
+    "static/media/YCP.png": "/static/media/YCP.1d55b48992515837acaa.png",
+    "index.html": "/index.html",
+    "main.a3d919f5.css.map": "/static/css/main.a3d919f5.css.map",
+    "main.19b04303.js.map": "/static/js/main.19b04303.js.map",
+    "453.e3cb1977.chunk.js.map": "/static/js/453.e3cb1977.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.838de014.css",
-    "static/js/main.d9070113.js"
+    "static/css/main.a3d919f5.css",
+    "static/js/main.19b04303.js"
   ]
 }
