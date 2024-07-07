@@ -4,12 +4,12 @@ import Landing from "./components/landing";
 import Header from "./components/header";
 import Projects from "./components/projects";
 import About from "./components/about";
-import Mines from "./components/mines";
-import { home, about, projects, mines, games, individualgame, work } from "./data/routes";
+// import Mines from "./components/mines";
+import { home, about, projects/* , mines, games, individualgame, work */ } from "./data/routes";
 // import Footer from "./components/footer";
-import GameList from "./components/games";
-import Game from "./components/game";
-import Work from "./components/work";
+// import GameList from "./components/games";
+// import Game from "./components/game";
+// import Work from "./components/work";
 
 function App() {
 	return (
