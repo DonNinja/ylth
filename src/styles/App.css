@@ -1,48 +1,58 @@
 :root {
-    --linkColour: rgb(76, 79, 92);
-    --linkHoverColour: rgb(51, 53, 63);
-    --navLinkColour: whitesmoke;
-    --backgroundColour: rgb(40, 42, 54);
-    --containerColour: rgb(68, 71, 90);
-    --aColour: rgb(152, 209, 228);
+	--linkColour: rgb(0, 49, 114);
+	--linkHoverColour: rgba(10, 0, 151, .7);
+	--navLinkColour: whitesmoke;
+	/* --backgroundColour: rgb(40, 42, 54); */
+	--backgroundColour: linear-gradient(0deg, rgb(5, 0, 73) 0%, rgb(5, 0, 73) 8%, rgb(0, 74, 173) 100%);
+	--containerColour: rgb(32, 41, 99);
+	--aColour: rgb(152, 209, 228);
+	--borderColour: rgb(255, 255, 255);
+    --projectColour: rgb(1, 63, 158);
+    --headerHeight: 10vh;
+    --footerHeight: 0vh;
+
+    /* Calculate the minimum height of the container */
+    --containerHeight: calc(100vh - var(--headerHeight) - var(--footerHeight) - 1.5vh);
 }
 
 body {
-    color: whitesmoke;
+	color: whitesmoke;
 }
 
 body {
-    background-color: var(--backgroundColour);
+	background: rgb(2, 0, 36);
+	background: var(--backgroundColour);
+	/* background-color: var(--backgroundColour); */
 }
 
-a,
-a:visited {
-    color: var(--aColour);
-    font-weight: bold;
+a {
+	color: var(--aColour);
+	font-weight: bold;
 }
 
 .container {
-    min-height: 83vh;
-    display: flex;
-    flex-wrap: wrap;
-    width: 60vw;
-    padding: 0 1em;
-    margin: 0 auto;
-    background-color: var(--containerColour);
+	/* min-height: 83.5vh; */
+	min-height: var(--containerHeight);
+	display: flex;
+	flex-wrap: wrap;
+	width: 60vw;
+	padding: 0 1em;
+	margin: 0 auto;
+	background-color: var(--containerColour);
 }
 
 .title {
-    text-align: center;
-    text-decoration: underline;
+	text-align: center;
+	text-decoration: underline;
 }
 
 .pageContainer {
-    margin: 0 auto;
-    max-width: 80%;
+	margin: 0 auto;
+	max-width: 80%;
 }
 
 @media screen and (max-width: 1306px) {
-    .container {
-        width: 80vw;
-    }
+	.container {
+		width: 80vw;
+	}
 }

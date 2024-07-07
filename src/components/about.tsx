@@ -34,7 +34,6 @@ const About = () => {
   return (
     <>
       {Title("About me")}
-      <div className="pageContainer">
         <h1 className="title">About me</h1>
         <div className="aboutContent">
           <div>
@@ -88,7 +87,6 @@ const About = () => {
             "https://en.tskoli.is"
           )}
         </div>
-      </div>
     </>
   );
 };

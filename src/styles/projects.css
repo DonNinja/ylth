@@ -4,17 +4,20 @@
 }
 
 .project {
-    background-color: rgb(75, 79, 104);
+    background-color: var(--projectColour);
     padding: .5rem 1rem;
     margin-bottom: .5rem;
     border-radius: 5px;
     border: 1px solid black;
 }
 
+.project:last-child {
+    margin-bottom: 2rem;
+}
+
 .projectDetails {
     display: flex;
 }
-
 
 .projectDescription {
     padding: 0 1em;

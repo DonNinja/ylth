@@ -24,7 +24,7 @@
 
 .schoolDiploma {
     margin-left: 2em;
-    width: 100%;
+    max-width: 45%;
     flex: 1;
 }
 
@@ -45,5 +45,6 @@
 
     .schoolDiploma {
         margin-left: 0;
+        max-width: 100%;
     }
 }

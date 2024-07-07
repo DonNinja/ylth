@@ -1,6 +1,7 @@
 #footer {
-    border-top: solid 1px black;
-    height: 3rem;
+    border-top: solid 0px black;
+    height: var(--footerHeight);
+    /* height: 3rem; */
     width: 100%;
     display: flex;
 }

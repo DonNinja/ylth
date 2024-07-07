@@ -1,10 +1,11 @@
 #header {
-    background-color: var(--backgroundColour);
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     width: 100%;
-    border-bottom: 1px solid black;
+    height: var(headerHeight);
+    /* height: 11vh; */
+    border-bottom: 0px solid var(--borderColour);
 }
 
 .navLink {
@@ -13,26 +14,10 @@
     font-size: large;
     text-align: center;
     text-decoration: none;
-    /* padding: 1.5vh 0; */
     transition-duration: 500ms;
-    /* background-color: var(--linkColour); */
     min-width: 8vw;
     user-select: none;
     color: var(--navLinkColour);
-}
-
-.Logo {
-    padding: 1vh;
-    min-width: 5vw;
-    text-align: center;
-}
-
-.Logo img {
-    height: 5em;
-}
-
-.navLink:not(:first-child) {
-    /* border-left: 1px solid black; */
 }
 
 .navLink:hover {
@@ -40,6 +25,16 @@
     /* text-decoration: underline; */
 }
 
-.navLink:visited {
+/* .navLink:visited {
     color: var(--navLinkColour);
+} */
+
+.logo {
+    padding: 1vh;
+    min-width: 5vw;
+    text-align: center;
+}
+
+.logo img {
+    height: 5em;
 }
