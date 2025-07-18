@@ -15,13 +15,14 @@
     text-align: center;
     text-decoration: none;
     transition-duration: 500ms;
-    min-width: 8vw;
+    min-width: 164px;
     user-select: none;
     color: var(--navLinkColour);
 }
 
 .navLink:hover {
     background-color: var(--linkHoverColour);
+    box-shadow: 0 0 5px 5px var(--linkHoverColour);
     /* text-decoration: underline; */
 }
 
@@ -30,7 +31,7 @@
 } */
 
 .logo {
-    padding: 1vh;
+    padding: 1vh 1vw;
     min-width: 5vw;
     text-align: center;
 }

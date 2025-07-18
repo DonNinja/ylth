@@ -3,15 +3,16 @@
 	--linkHoverColour: rgba(10, 0, 151, .7);
 	--navLinkColour: whitesmoke;
 	/* --backgroundColour: rgb(40, 42, 54); */
-	--backgroundColour: linear-gradient(0deg, rgb(5, 0, 73) 0%, rgb(5, 0, 73) 8%, rgb(0, 74, 173) 100%);
-	--containerColour: rgb(32, 41, 99);
+	--backgroundColour: rgba(0, 0, 0, 1);
+	/* linear-gradient(0deg, rgb(5, 0, 73) 0%, rgb(9, 0, 137) 50%, rgb(0, 88, 204) 100%); */
+	--containerColour: rgba(32, 41, 99, 0.5);
 	--aColour: rgb(152, 209, 228);
 	--borderColour: rgb(255, 255, 255);
     --projectColour: rgb(1, 63, 158);
     --headerHeight: 10vh;
     --footerHeight: 0vh;
 
-    /* Calculate the minimum height of the container */
+    /* Calculate the minimum height of the container so that it is flush with the bottom of the screen */
     --containerHeight: calc(100vh - var(--headerHeight) - var(--footerHeight) - 1.5vh);
 }
 
@@ -20,9 +21,8 @@ body {
 }
 
 body {
-	background: rgb(2, 0, 36);
+	/* background: rgba(2, 0, 36, 0.5); */
 	background: var(--backgroundColour);
-	/* background-color: var(--backgroundColour); */
 }
 
 a {
@@ -37,13 +37,16 @@ a {
 	flex-wrap: wrap;
 	width: 60vw;
 	padding: 0 1em;
-	margin: 0 auto;
+	margin: 1em auto;
+	border-radius: 5px;
 	background-color: var(--containerColour);
+	box-shadow: 0 0 10px 20px var(--containerColour);
 }
 
 .title {
 	text-align: center;
 	text-decoration: underline;
+	margin-top: 0;
 }
 
 .pageContainer {
