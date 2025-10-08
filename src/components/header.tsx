@@ -9,13 +9,13 @@ const Header = () => {
 			{/* <Link to={work} className="navLink">
 				<p>Work</p>
 			</Link> */}
-			<Link to={about} className="navLink">
+			<Link to={about} className="navLink linkHover">
 				<p>About me</p>
 			</Link>
-			<Link to={home} className="logo">
+			<Link to={home} className="logo linkHover">
 				<img src={Logo} alt="Home" />
 			</Link>
-			<Link to={projects} className="navLink">
+			<Link to={projects} className="navLink linkHover">
 				<p>Projects</p>
 			</Link>
 			{/* <Link to={games} className="navLink">

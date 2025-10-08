@@ -1,29 +1,31 @@
 #header {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    width: 100%;
-    height: var(headerHeight);
-    /* height: 11vh; */
-    border-bottom: 0px solid var(--borderColour);
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	width: 100%;
+	height: var(--headerHeight);
+	/* height: 11vh; */
+	border-bottom: 0px solid var(--borderColour);
 }
 
 .navLink {
-    display: grid;
-    align-content: center;
-    font-size: large;
-    text-align: center;
-    text-decoration: none;
-    transition-duration: 500ms;
-    min-width: 164px;
-    user-select: none;
-    color: var(--navLinkColour);
+	display: grid;
+	align-content: center;
+	font-size: large;
+	text-align: center;
+	text-decoration: none;
+	min-width: 164px;
+	user-select: none;
+	color: var(--navLinkColour);
 }
 
-.navLink:hover {
-    background-color: var(--linkHoverColour);
-    box-shadow: 0 0 5px 5px var(--linkHoverColour);
-    /* text-decoration: underline; */
+.linkHover {
+	transition-duration: 500ms;
+}
+
+.linkHover:hover {
+	background-color: var(--containerColour);
+	box-shadow: 0 0 5px 5px var(--containerColour);
 }
 
 /* .navLink:visited {
@@ -31,11 +33,11 @@
 } */
 
 .logo {
-    padding: 1vh 1vw;
-    min-width: 5vw;
-    text-align: center;
+	padding: 1vh 1vw;
+	min-width: 5vw;
+	text-align: center;
 }
 
 .logo img {
-    height: 5em;
+	height: 100%;
 }
