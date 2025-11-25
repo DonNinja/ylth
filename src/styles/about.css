@@ -4,11 +4,16 @@
 
 .studyObject {
     display: block;
+    /* background-color: var(--projectColour); */
 }
 
-.studyObject:nth-child(n+2) {
-    padding-top: .5rem;
+.studyObject:nth-child(n+4) {
+    margin-top: .5rem;
 }
+
+/* .studyObject:nth-last-child(n) {
+    margin-top: .5rem;
+} */
 
 .studyTitle {
     text-align: center;
@@ -16,7 +21,7 @@
 }
 
 .aboutSchool {
-    display: block;
+    display: inline-block;
     /* width: 100%; */
     padding-top: 1rem;
     flex-flow: row;

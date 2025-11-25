@@ -66,7 +66,8 @@ const About = () => {
 				{Study(
 					"Reykjavík University",
 					`<p>I started studying in Reykjavík University in August of 2019, and quickly found that I may have had a bit more preparation than some of my peers, at least regarding formal education. I quickly discovered however that the studies would move fast and others would be caught up in no time.</p>
-			        <p>I found the studies in Reykjavík University to be very interesting, and the projects that were given were always fun and brain stimulating challenges. I always tried the absolute hardest I could to finish each project with satisfactory results. The teams I worked within always had good comradery between every team member, and I took the role of team captain upon myself multiple times when it was needed.</p>`,
+			        <p>I found the studies in Reykjavík University to be very interesting, and the projects that were given were always fun and brain stimulating challenges. I always tried the absolute hardest I could to finish each project with satisfactory results. The teams I worked within always had good comradery between every team member, and I took the role of team captain upon myself multiple times when it was needed.</p>
+					<p>I wholly enjoyed my time at Reykjavík University and the time was well spent in learning as much as I could, regarding everything from compilers to computer graphics. I which optional classes I would take so that I could create as rounded of a knowledge base as is possible.</p>`,
 					HR_Diploma,
 					"My diploma from Reykjavík University",
 					7.98,
@@ -75,8 +76,7 @@ const About = () => {
 				{Study(
 					"Tækniskólinn",
 					`<p>I started my programming studies at Tækniskólinn, starting at their Computer Science classes in the spring of 2016. I decided quite early on in my life that I wanted to learn how to program and how programs, and computers in general, work to help us to solve the problems we face.</p>
-                    <p>During my studies I was a dilligent student and always turned in my projects on time and almost always with satisfying results (Can't win 'em all, sadly).</p>`,
-
+                    <p>During my studies I was a dilligent student who always turned in projects on time and was always satisfied with the results.</p>`,
 					TSchool_Diploma,
 					"My diploma from Tækniskólinn",
 					8.11,
